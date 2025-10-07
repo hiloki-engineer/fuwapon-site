@@ -77,3 +77,34 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+.ig-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.ig-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f7caca;
+}
+.ig-info h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.ig-info p {
+  margin: 4px 0 12px;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
