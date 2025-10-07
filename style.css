@@ -59,15 +59,13 @@ body {
   place-items: center;
   min-height: 68vh;
   text-align: center;
-  background:
-    radial-gradient(80% 60% at 50% 0%, #fff 0%, #fff 40%, #fff0 41%),
+  background: 
+    url("EA546DB9-8BF6-4C16-AFA6-0FF643150269.PNG") center/cover no-repeat,
+    radial-gradient(80% 60% at 50% 0%, #fff 0%, #fff 40%, transparent 41%),
     linear-gradient(180deg, #fff 0%, #fff 60%, #fffaf7 100%);
- background-image: url("EA546DB9-8BF6-4C16-AFA6-0FF643150269.PNG");
- background-size: cover; /* 画面いっぱいに広げる */ 
- background-position: center; /* 中央に配置 */ 
- background-repeat: no-repeat; /* 繰り返しなし */ 
   overflow: hidden;
 }
+
 .hero h2 {
   font-size: clamp(1.75rem, 6vw, 3.5rem);
   margin: 1rem 0 0.5rem;
