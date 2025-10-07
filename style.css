@@ -151,7 +151,7 @@ body {
     font-size: 36px;   /* 矢印を小さく */
   }
   .scroll-arrow {
-    bottom: 30px;      /* 位置を詰める */
+    bottom: 60px;      /* 位置を詰める */
   }
   .scroll-arrow2 {
     bottom: 15px;      /* 位置を詰める */
