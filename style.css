@@ -111,49 +111,49 @@ body {
   font-size: 14px;
   line-height: 1.6;
 }
+
 .scroll-arrow,
 .scroll-arrow2 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 56px;           /* 矢印の大きさ */
-  color: #f7caca;            /* ピンク色 */
+  font-size: 56px;
+  color: #f7caca;
   opacity: 0.8;
   animation: arrowDown 1.8s ease-in-out infinite;
 }
 
-/* 1つ目（上） */
 .scroll-arrow {
   bottom: 60px;
   animation-delay: 0s;
 }
-
-/* 2つ目（下） */
 .scroll-arrow2 {
   bottom: 30px;
-  animation-delay: 0.4s;   /* 少し遅れて動く */
+  animation-delay: 0.4s;
 }
 
 @keyframes arrowDown {
-  0% {
-    transform: translate(-50%, 0);
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  60% {
-    transform: translate(-50%, 10px);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(-50%, 20px);
-    opacity: 0;
-  }
+  0%   { transform: translate(-50%, 0); opacity: 0; }
+  30%  { opacity: 1; }
+  60%  { transform: translate(-50%, 10px); opacity: 1; }
+  100% { transform: translate(-50%, 20px); opacity: 0; }
 }
 
-/* hero セクションを relative に */
 .hero {
   position: relative;
   overflow: hidden;
+}
+
+/* 🔽 スマホ調整 */
+@media (max-width: 600px) {
+  .scroll-arrow,
+  .scroll-arrow2 {
+    font-size: 36px;   /* 矢印を小さく */
+  }
+  .scroll-arrow {
+    bottom: 30px;      /* 位置を詰める */
+  }
+  .scroll-arrow2 {
+    bottom: 15px;      /* 位置を詰める */
+  }
 }
