@@ -228,3 +228,26 @@ body {
   width: 100%;
   height: 100%;
 }
+.section-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-title h3 {
+  margin: 0;
+  font-size: clamp(1.2rem, 4vw, 1.6rem);
+}
+
+.section-title .icon {
+  width: 28px;
+  height: 28px;
+  color: #f7caca;
+  flex-shrink: 0;
+}
+/* Instagram風 */
+#instagram .icon { color: #E1306C; }
+
+/* YouTube風 */
+#youtube .icon { color: #FF0000; }
