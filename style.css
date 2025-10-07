@@ -108,3 +108,11 @@ body {
   line-height: 1.6;
 }
 
+body {
+  background-image: url("EA546DB9-8BF6-4C16-AFA6-0FF643150269.PNG");
+  background-size: cover;          /* 画面いっぱいに広げる */
+  background-position: center;     /* 中央に配置 */
+  background-repeat: no-repeat;    /* 繰り返しなし */
+  background-attachment: fixed;    /* スクロールしても固定 */
+  background-color: #bfe5ff;       /* 読み込み中の補色 */
+}
