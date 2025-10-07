@@ -112,3 +112,47 @@ body {
   line-height: 1.6;
 }
 
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 40px;
+  border: 2px solid #f7caca;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.scroll-down span {
+  display: block;
+  width: 4px;
+  height: 8px;
+  background: #f7caca;
+  border-radius: 2px;
+  animation: scrollMove 1.5s infinite;
+  margin-top: 6px;
+}
+
+@keyframes scrollMove {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* hero を relative にする必要あり */
+.hero {
+  position: relative;
+}
