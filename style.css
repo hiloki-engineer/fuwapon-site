@@ -111,48 +111,49 @@ body {
   font-size: 14px;
   line-height: 1.6;
 }
-
-.scroll-down {
+.scroll-arrow,
+.scroll-arrow2 {
   position: absolute;
-  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 24px;
-  height: 40px;
-  border: 2px solid #f7caca;
-  border-radius: 12px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  overflow: hidden;
+  font-size: 56px;           /* 矢印の大きさ */
+  color: #f7caca;            /* ピンク色 */
+  opacity: 0.8;
+  animation: arrowDown 1.8s ease-in-out infinite;
 }
 
-.scroll-down span {
-  display: block;
-  width: 4px;
-  height: 8px;
-  background: #f7caca;
-  border-radius: 2px;
-  animation: scrollMove 1.5s infinite;
-  margin-top: 6px;
+/* 1つ目（上） */
+.scroll-arrow {
+  bottom: 60px;
+  animation-delay: 0s;
 }
 
-@keyframes scrollMove {
+/* 2つ目（下） */
+.scroll-arrow2 {
+  bottom: 30px;
+  animation-delay: 0.4s;   /* 少し遅れて動く */
+}
+
+@keyframes arrowDown {
   0% {
+    transform: translate(-50%, 0);
     opacity: 0;
-    transform: translateY(0);
   }
   30% {
     opacity: 1;
-    transform: translateY(8px);
+  }
+  60% {
+    transform: translate(-50%, 10px);
+    opacity: 1;
   }
   100% {
+    transform: translate(-50%, 20px);
     opacity: 0;
-    transform: translateY(20px);
   }
 }
 
-/* hero を relative にする必要あり */
+/* hero セクションを relative に */
 .hero {
   position: relative;
+  overflow: hidden;
 }
