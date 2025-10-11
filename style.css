@@ -254,12 +254,7 @@ body {
   flex-shrink: 0;
 }
 /* Instagram風 */
-#instagram .icon {
-  width: 80px;
-  height: 80px;
-  display: inline-block;
-  vertical-align: middle;
-}
+#instagram .icon {color: #E1306C; }
 
 /* YouTube風 */
 #youtube .icon { color: #FF0000; }
