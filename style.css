@@ -254,7 +254,11 @@ body {
   flex-shrink: 0;
 }
 /* Instagram風 */
-#instagram .icon { background: conic-gradient(from 180deg at 50% 50%, #FF6A00, #F3FF11, #FF6A00, #FF0000, #FF00FB, #FF0000, #FF6A00);}
+#instagram .icon {
+  background: conic-gradient(from 180deg at 50% 50%, #FF6A00, #F3FF11, #FF6A00, #FF0000, #FF00FB, #FF0000, #FF6A00);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
 /* YouTube風 */
 #youtube .icon { color: #FF0000; }
