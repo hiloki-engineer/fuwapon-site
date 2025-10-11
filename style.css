@@ -114,7 +114,7 @@ body {
 /* Button */
 .btn {
   display: inline-block;
-  background: red;
+  background: conic-gradient(from 180deg at 50% 50%, #FF6A00, #F3FF11, #FF6A00, #FF0000, #FF00FB, #FF0000, #FF6A00);
   color: #fff;
   padding: 0.6em 1.4em;
   border-radius: 9999px;
