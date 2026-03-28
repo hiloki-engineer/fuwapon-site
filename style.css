@@ -22,8 +22,17 @@ body {
 .section { padding: clamp(3rem, 8vw, 4.5rem) 0; }
 .section.alt { background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #fbdeed 100%); }
 .two-col { display: grid; gap: 1.75rem; grid-template-columns: 1fr; }
-@media (min-width: 900px) {
-  .two-col { grid-template-columns: 1fr 1fr; }
+@media (max-width: 899px) {
+  .site-header .nav {
+    display: flex;          /* 横並びを維持しつつ */
+    flex-wrap: wrap;        /* 全体が収まらない時は、次の行に折り返す */
+    justify-content: center; /* 項目を中央に寄せる */
+    gap: 0.5rem 1rem;       /* 項目と項目の間に適切な余白を作る (縦 0.5rem / 横 1rem) */
+  }
+
+  .site-header .nav a {
+    white-space: nowrap;   /* !!! これが最重要 !!! 文字そのものは絶対折り返さない (例：コンセプトが1行に収まる) */
+  }
 }
 
 .site-header {
